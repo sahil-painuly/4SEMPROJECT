@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tasks - TODO Application</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="monthly.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="mainContent">
+        <h1>
+          Monthly Tasks <img src="/TodoApplication/Resources/icon.png" alt="" />
+        </h1>
+        <p>Set and achieve your monthly objectives with ease.</p>
+        <div class="tasks">
+          <h2>Enter Your Monthly To-Do List</h2>
+          <div id="addTaskSection">
+            <input
+              type="text"
+              id="newTaskInput"
+              class="styled-input"
+              placeholder="Enter a new task..."
+            />
+            <button onclick="addTask()">Add Task</button>
+          </div>
+        </div>
+      </div>
+      <ul id="taskList"></ul>
+
+      <div class="buttons">
+        <button id="pendingTasksBtn" onclick="toggleTasks()">
+          Show Pending Tasks
+        </button>
+        <button onclick="location.href='../index.html'">Back to Home</button>
+      </div>
+    </div>
+    <script src="monthly.js"></script>
+  </body>
+</html>
